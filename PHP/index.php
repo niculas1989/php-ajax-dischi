@@ -42,16 +42,16 @@ include __DIR__ . '/api/data.php';
         <!-- CREAZIONE DI UNA CARD, PRESA DA VUE-DISCHI -->
         <div class="container">
             <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 gy-3 gx-4">
-                <div class="col">
-                    <?php foreach ($database as $db) : ?>
+                <?php foreach ($database as $db) : ?>
+                    <div class="col">
                         <div class="card-disc text-center" role="button">
                             <img src="<?= $db['poster'] ?>" alt="<?= $db['author'] ?>" />
                             <h4 class="text-white mt-3"><?= $db['title'] ?></h4>
                             <p class="text-secondary m-0 pt-2"><?= $db['author'] ?></p>
                             <p class="text-secondary"><?= $db['year'] ?></p>
                         </div>
-                    <?php endforeach; ?>
-                </div>
+                    </div>
+                <?php endforeach; ?>
             </div>
         </div>
     </main>
