@@ -4,3 +4,12 @@
   height: 400px;
   padding: 1.2rem;
 }
+
+#nav {
+  background-color: #2d3a46;
+  height: 50px;
+  margin-top: 10px;
+}
+svg {
+  height: 40px;
+}
