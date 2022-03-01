@@ -87,12 +87,14 @@ $database = [
     <main>
 
         <!-- CREAZIONE DI UNA CARD, PRESA DA VUE-DISCHI -->
-        <!-- <div class="card-disc text-center" role="button">
-            <img src="" alt="" />
-            <h4 class="text-white mt-3"></h4>
-            <p class="text-secondary m-0 pt-2"></p>
-            <p class="text-secondary"></p>
-        </div> -->
+        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 gy-3 gx-4">
+            <div class="card-disc text-center" role="button">
+                <img src="" alt="" />
+                <h4 class="text-white mt-3"></h4>
+                <p class="text-secondary m-0 pt-2"></p>
+                <p class="text-secondary"></p>
+            </div>
+        </div>
     </main>
 
     <footer></footer>
