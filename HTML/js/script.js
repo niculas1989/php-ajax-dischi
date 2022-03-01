@@ -26,6 +26,13 @@ const root = new Vue({
             });
             return genres;
         },
+        filteredAlbumsByGenre() {
+            const filter = this.filteredGenre;
+            return this.albums.filter((album) => {
+                if (album.genre == this.search || this.search == "ALL" || this.search == "")
+                    return true;
+            });
+        },
     },
     mounted() {
         this.getAlbums();
