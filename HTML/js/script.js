@@ -17,12 +17,6 @@ const root = new Vue({
                 console.error(err);
             })
         },
-        searchByGenre() {
-
-        }
-    },
-    mounted() {
-        this.getAlbums();
     },
     computed: {
         filteredGenre() {
@@ -32,5 +26,9 @@ const root = new Vue({
             });
             return genres;
         },
-    }
+    },
+    mounted() {
+        this.getAlbums();
+        this.filteredGenre();
+    },
 });
