@@ -7,6 +7,7 @@ const root = new Vue({
     el: '#root',
     data: {
         albums: [],
+        search: '',
     },
     methods: {
         getAlbums() {
@@ -15,6 +16,9 @@ const root = new Vue({
             }).catch(err => {
                 console.error(err);
             })
+        },
+        searchByGenre() {
+
         }
     },
     mounted() {
