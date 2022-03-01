@@ -6,7 +6,18 @@ Vue.config.devtools = true;
 const root = new Vue({
     el: '#root',
     data: {
+        albums: [],
     },
     methods: {
+        getAlbums() {
+            axios.get('http://localhost:8000/php-ajax-dischi/api/data-json.php').then(res => {
+                this.albums = res.data;
+            }).catch(err => {
+                console.error(err);
+            })
+        }
+    },
+    mounted() {
+        this.getAlbums();
     }
 });
