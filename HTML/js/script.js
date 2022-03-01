@@ -23,5 +23,14 @@ const root = new Vue({
     },
     mounted() {
         this.getAlbums();
+    },
+    computed: {
+        filteredGenre() {
+            const genres = [];
+            this.albums.forEach((disc) => {
+                if (!genres.includes(disc.genre)) genres.push(disc.genre);
+            });
+            return genres;
+        },
     }
 });
