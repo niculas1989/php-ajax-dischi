@@ -1,0 +1,22 @@
+body {
+  background-color: #1e2d3b;
+}
+img {
+  max-width: 100%;
+}
+
+.card-disc {
+  background-color: #2e3a46;
+  font-weight: bold;
+  height: 400px;
+  padding: 1.2rem;
+}
+
+#nav {
+  background-color: #2d3a46;
+  height: 50px;
+  margin-top: 10px;
+}
+svg {
+  height: 40px;
+}
