@@ -29,6 +29,5 @@ const root = new Vue({
     },
     mounted() {
         this.getAlbums();
-        this.filteredGenre();
     },
 });

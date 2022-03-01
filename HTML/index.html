@@ -31,7 +31,7 @@
                     </a>
                     <select name="genre" id="genre" form="genreform" v-model="search">
                         <option value="ALL">ALL</option>
-                        <option v-for="(album, index) in filteredGenre" :key="index" :value="album.genre">
+                        <option v-for="(album, index) in filteredGenre" :key="index" :value="album">
                             {{album}}
                         </option>
                     </select>
