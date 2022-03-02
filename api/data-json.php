@@ -1,5 +1,7 @@
 <?php
 
+/* $search = $_GET['search'] ?? ''; */
+
 $database = [
     [
         'title' => 'New Jersey',
@@ -44,6 +46,20 @@ $database = [
         'genre' => 'Rock'
     ]
 ];
+
+/* $result = $database;
+
+if (!empty($search)) {
+    $result = [];
+    foreach ($databe as $db) {
+        $genre = strtolower($db['genre']);
+        $query = trim(strtolower($search));
+
+        if (strpos($genre, $query !== false)) {
+            return $result[] = $db;
+        }
+    }
+} */
 
 header('Content-Type: application/json');
 
