@@ -1,6 +1,6 @@
 <?php
 
-/* $search = $_GET['search'] ?? ''; */
+$genre = $_GET['genre'] ?? '';
 
 $database = [
     [
@@ -60,6 +60,17 @@ if (!empty($search)) {
         }
     }
 } */
+
+$results = [];
+
+if (!empty($genre)) {
+    $results = [];
+    foreach ($databe as $db) {
+        if ($db['genre'] === $genre) $results[] = $db;
+    }
+}
+
+
 
 header('Content-Type: application/json');
 
